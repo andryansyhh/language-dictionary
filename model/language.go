@@ -1,6 +1,7 @@
 package model
 
 type ProgrammingLanguage struct {
+	Id             int      `json:"id"`
 	Language       string   `json:"language"`
 	Appeared       int      `json:"appeared"`
 	Created        []string `json:"created"`
