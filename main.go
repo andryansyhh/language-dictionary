@@ -19,6 +19,8 @@ func main() {
 	r.GET("/", handler.HelloHandler)
 	r.GET("/language", handler.GetLanguage)
 	r.NoRoute(handler.MethodNotAllowedHandler)
+	r.GET("/palindrome", handler.CheckPalindrome)
+
 
 	r.Run(":7777")
 }
